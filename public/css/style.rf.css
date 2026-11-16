@@ -3,7 +3,6 @@
 html {
     color: white;
     font-family: sans-serif;
-    background-size: 100% 300px, auto;
     background: url(../img/bg.gif) repeat;
 }
 a {
@@ -27,11 +26,16 @@ h3 {
 .mof--hidden {
     display: inline-block;
 }
-.rf--hidden,
-.navbar,
+.rf--hidden {
+    display: none;
+}
+.navbar {
+    display: none;
+}
 [data-icon] {
     display: none;
 }
+/* internet exploder 6 ignores display nones if theyre not defined one by one class by class sob */
 .head {
     padding: 16px 0;
 }
